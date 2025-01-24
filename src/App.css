@@ -1,0 +1,208 @@
+/* General Styles */
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #f4f4f9;
+  color: #333;
+}
+
+h1 {
+  text-align: center;
+  color: #333;
+  margin: 20px 0;
+  font-size: 2.5rem;
+  text-transform: uppercase;
+}
+
+/* Form Styles */
+form {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 15px;
+  margin: 20px auto;
+  max-width: 80%;
+  flex-wrap: wrap;
+}
+
+form input[type="text"], 
+form textarea, 
+form input[type="date"], 
+form select {
+  padding: 10px;
+  width: 250px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 14px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  background: #fff;
+  resize: none;
+}
+
+form textarea {
+  height: 60px;
+}
+
+form button {
+  padding: 10px 20px;
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  font-size: 14px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+form button:hover {
+  background-color: #0056b3;
+}
+
+/* Table Styles */
+table {
+  width: 90%;
+  margin: 20px auto;
+  border-collapse: collapse;
+  background-color: #fff;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+  border-radius: 8px;
+  overflow: hidden;
+}
+
+th, td {
+  text-align: center;
+  padding: 15px;
+  border: 1px solid #ddd;
+  font-size: 14px;
+}
+
+th {
+  background-color: #007bff;
+  color: #fff;
+  text-transform: uppercase;
+}
+
+tr:nth-child(even) {
+  background-color: #f9f9f9;
+}
+
+tr:hover {
+  background-color: #eef7ff;
+}
+
+/* Priority Colors */
+td.priority {
+  font-weight: bold;
+}
+
+td.priority-high {
+  color: #d9534f;
+}
+
+td.priority-medium {
+  color: #f0ad4e;
+}
+
+td.priority-low {
+  color: #5bc0de;
+}
+
+/* Checkbox and Actions */
+input[type="checkbox"] {
+  transform: scale(1.3);
+  cursor: pointer;
+}
+
+button {
+  padding: 8px 12px;
+  border: none;
+  border-radius: 5px;
+  font-size: 12px;
+  cursor: pointer;
+}
+
+button.delete {
+  background-color: #dc3545;
+  color: white;
+  transition: background-color 0.3s ease;
+}
+
+button.delete:hover {
+  background-color: #c82333;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  form {
+    flex-direction: column;
+    align-items: stretch;
+  }
+
+  form input, form textarea, form select, form button {
+    width: 100%;
+  }
+
+  table {
+    font-size: 12px;
+  }
+}
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 20px;
+}
+
+thead th {
+  background-color: #007bff;
+  color: white;
+  text-transform: uppercase;
+  padding: 10px;
+  text-align: center;
+}
+
+tbody td {
+  padding: 10px;
+  text-align: center;
+}
+
+table th, table td {
+  border: 1px solid #ddd;
+  width: 16%; /* Make all columns equal in width */
+}
+
+tbody tr:nth-child(even) {
+  background-color: #f9f9f9;
+}
+
+button {
+  padding: 5px 10px;
+  border: none;
+  border-radius: 5px;
+  background-color: #ccc;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color:#e8081f;
+}
+
+
+
+/* App.css */
+.description-input {
+  width: 100%;  /* Takes up full width of the container */
+  max-width: 600px;  /* Optional: Limits the width */
+  height: 100px;  /* Adjust the height */
+  padding: 10px;  /* Padding inside the box */
+  font-size: 16px;  /* Text size */
+  border-radius: 8px;  /* Rounded corners */
+  border: 2px solid #ccc;  /* Border style */
+  resize: vertical;  /* Allows users to resize the height */
+  outline: none;  /* Remove default outline */
+}
+
+.description-input:focus {
+  border-color: #61dafb;  /* Change border color when focused */
+  background-color: #f4f8ff;  /* Change background color when focused */
+}
